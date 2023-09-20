@@ -1,6 +1,10 @@
 function getFormvalue() {
-   function getFormvalue() {
-    let firstName = document.getElementById("firstName").value;
-    let lastName = document.getElementById("lastName").value;
-    alert(`${firstName} ${lastName}`);
+var x=document.getElementById("form1");
+let name = ""
+for (var i=0;i<x.length;i++) {
+if (x.elements[i].value!='Submit')
+name += x.elements[i].value + " "
+}
+
+alert(name.substring(0,name.length-1));
 }
